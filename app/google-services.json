@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "914441132980",
+    "project_id": "movierec-87f89",
+    "storage_bucket": "movierec-87f89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914441132980:android:8ccfd6071072e2c6ff70e1",
+        "android_client_info": {
+          "package_name": "com.example.movierec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914441132980-ojf4gtial6acep5ij932rq7asfq117cv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5i27Yi9dkadmdPEd1paK_VUaLOM9fMUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914441132980-ojf4gtial6acep5ij932rq7asfq117cv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
