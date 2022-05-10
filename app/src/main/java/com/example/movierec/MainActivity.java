@@ -24,8 +24,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    RequestQueue requestQueue;
+    private RecyclerView recyclerView;
+    private RequestQueue requestQueue;
     List<Movie> movieList;
 
     @Override

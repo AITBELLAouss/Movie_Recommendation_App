@@ -1,8 +1,8 @@
 package com.example.movierec;
 
 public class Movie {
-    String  poster ,title,overview,genres;
-    Double rating;
+    private String  poster ,title,overview,genres;
+    private Double rating;
 
     public Movie (String poster ,String title , String overview , String genres , Double rating){
         this.genres = genres;
