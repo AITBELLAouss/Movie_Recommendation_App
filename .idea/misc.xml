@@ -6,10 +6,12 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/drawable-v24/btn_bg.xml" value="0.1495" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/drawable-v24/custom_search_view.xml" value="0.1275" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/drawable-v24/intput_bg.xml" value="0.1275" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/activity_gg.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/drawable/item_background.xml" value="0.102" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/activity_gg.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/activity_login.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/activity_register.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/layout/item.xml" value="0.25" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MovieRec/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1575" />
       </map>
     </option>
