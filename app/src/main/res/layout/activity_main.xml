@@ -10,8 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="410dp"
+        android:layout_height="123dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,24 +51,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_person" />
 
-        <SearchView
-            android:id="@+id/searchview"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/custom_search_view"
-            android:queryHint="seach here"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
-        android:layout_width="409dp"
-        android:layout_height="529dp"
+        android:layout_width="410dp"
+        android:layout_height="606dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

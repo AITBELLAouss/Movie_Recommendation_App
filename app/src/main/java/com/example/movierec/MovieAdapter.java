@@ -1,6 +1,8 @@
 package com.example.movierec;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -40,6 +43,21 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
         holder.title_tv.setText(movie.getTitle());
         Glide.with(context).load(movie.getPoster()).into(holder.imageView);
 
+        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context , gg.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("title", movie.getTitle());
+                bundle.putString("overview", movie.getOverview());
+                bundle.putString("genres", movie.getGenres());
+                bundle.putString("poster", movie.getPoster());
+                bundle.putDouble("rating" , movie.getRating());
+
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -51,6 +69,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
 
         ImageView imageView;
         TextView title_tv,overview_tv,Genres,rating;
+        ConstraintLayout constraintLayout;
 
         public MovieHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,6 +79,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
             overview_tv = itemView.findViewById(R.id.overview_tv);
             Genres = itemView.findViewById(R.id.Genres);
             rating = itemView.findViewById(R.id.rating);
+            constraintLayout =itemView.findViewById(R.id.main_layout);
         }
     }
 

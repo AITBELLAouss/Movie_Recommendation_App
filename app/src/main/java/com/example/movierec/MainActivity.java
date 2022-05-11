@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchMovies() {
 
-       String url ="https://aitbellaouss.github.io/api_movies/movies_info.json";
+       String url ="https://api.jsonserve.com/VGN71w";
 
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,url, null, new Response.Listener<JSONArray>() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
-                for (int i = 0;i < response.length();i++){
+                for (int i = 0; i < response.length(); i++) {
                     try {
 
                         JSONObject jsonObject = response.getJSONObject(i);
@@ -63,13 +63,14 @@ public class MainActivity extends AppCompatActivity {
                         String poster = jsonObject.getString("poster");
                         Double rating = jsonObject.getDouble("rating");
 
-                        Movie movie= new Movie(title,overview,genres,poster,rating);
+                        Movie movie = new Movie(title, overview, genres, poster, rating);
                         movieList.add(movie);
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
 
-                    MovieAdapter adapter= new MovieAdapter(MainActivity.this,movieList);
+                    MovieAdapter adapter = new MovieAdapter(MainActivity.this, movieList);
                     recyclerView.setAdapter(adapter);
                 }
 
@@ -77,9 +78,11 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
                 Toast.makeText(MainActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
+
         });
         requestQueue.add(jsonArrayRequest);
     }
