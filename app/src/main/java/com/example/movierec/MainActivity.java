@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void fetchMovies() {
+    private void fetchMovies()  {
 
        String url ="https://api.jsonserve.com/VGN71w";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
-            public void onResponse(JSONArray response) {
+            public void onResponse(JSONArray response)   {
                 for (int i = 0; i < response.length(); i++) {
                     try {
 
